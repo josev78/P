@@ -95,14 +95,11 @@ extract($_POST);
 				//Seccion para eliminar registro
 				if ($post['eliminar'])
 				{
-					echo "<script>location.href='modal.php'</script>";
-					/*
 					$delete_id = $post['eliminar_id'];
 					$database->query('delete from ventas where id=:id');
 					$database->bind(':id',$delete_id);
 					$database->execute();
-					*/
-					//echo "<script>location.href='facturacion.php'</script>";
+					echo "<script>location.href='facturacion.php'</script>";
 				}
 				if ($post['detalle'])
 				{
@@ -112,3 +109,4 @@ extract($_POST);
 		
 	</div>
 	<?php include ("piepagina.php"); ?>
+</body>
